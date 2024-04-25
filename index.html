@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+            //Nesse exercicio eu vou realiza o calculo do IPVA do veiculo. 
+            var valor_ipva = (x,y) => x * y;
+            var desconto_bom_motorista =(x,y) => x * y;
+            var preco_ipva_final = (x,y) => x - y;
+
+
+            var valor_veiculo = 70000;
+            var ipva = 0.05;
+            var desconto_bom_motorista_1 = 0.09;
+
+            var calculo_ipva = valor_ipva (valor_veiculo, ipva);
+            var valor_desconto = desconto_bom_motorista(calculo_ipva,desconto_bom_motorista_1);
+            var verificar_preco_final = preco_ipva_final(calculo_ipva, valor_desconto);
+
+            Console.log(verificar_preco_final);
+
+
+
+        </script>
+
+
+
+    </body>
+
+
+
+
+
+</html>
